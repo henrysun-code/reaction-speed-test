@@ -1,0 +1,56 @@
+name: Publish reaction-speed-test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'games/reaction-speed-test/**'
+      - 'shared/**'
+      - 'tools/xlsx-to-json/**'
+      - 'tools/asset-checker/**'
+      - '.github/workflows/reaction-speed-test-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reaction-speed-test-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: games/reaction-speed-test/package-lock.json
+      - name: Install game dependencies
+        run: npm ci
+        working-directory: games/reaction-speed-test
+      - name: Test game
+        run: npm test
+        working-directory: games/reaction-speed-test
+      - name: Build game
+        run: npm run build
+        working-directory: games/reaction-speed-test
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist/reaction-speed-test
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy game
+        id: deployment
+        uses: actions/deploy-pages@v4
