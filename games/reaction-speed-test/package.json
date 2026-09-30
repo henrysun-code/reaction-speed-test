@@ -1,0 +1,27 @@
+{
+  "name": "reaction-speed-test",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/config.mjs && vite",
+    "build": "node scripts/config.mjs && node ../../tools/asset-checker/index.js . && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "config": "node scripts/config.mjs",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "typescript": "^5.9.2",
+    "tsx": "^4.20.5",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/node": "^24.5.2",
+    "@playwright/test": "^1.55.1"
+  }
+}

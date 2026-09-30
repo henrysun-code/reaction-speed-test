@@ -1,0 +1,1 @@
+export function applySafeArea(element) { Object.assign(element.style, { paddingTop:'env(safe-area-inset-top)', paddingRight:'env(safe-area-inset-right)', paddingBottom:'env(safe-area-inset-bottom)', paddingLeft:'env(safe-area-inset-left)' }); }

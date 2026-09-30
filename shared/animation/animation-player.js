@@ -1,0 +1,4 @@
+export class AnimationPlayer {
+  constructor({ image, frameWidth, frameHeight, frameCount, fps = 12, playMode = 'loop' }) { Object.assign(this, { image, frameWidth, frameHeight, frameCount, fps, playMode }); this.frame = 0; this.direction = 1; this.elapsed = 0; }
+  update(deltaSeconds) { this.elapsed += deltaSeconds; const step = 1 / this.fps; while (this.elapsed >= step) { this.elapsed -= step; this.frame += this.direction; if (this.frame >= this.frameCount || this.frame < 0) { if (this.playMode === 'once') this.frame = this.frameCount - 1; else if (this.playMode === 'pingpong') { this.direction *= -1; this.frame = Math.max(0, Math.min(this.frameCount - 1, this.frame + 2 * this.direction)); } else this.frame = 0; } } return { x: this.frame * this.frameWidth, y: 0, width: this.frameWidth, height: this.frameHeight }; }
+}

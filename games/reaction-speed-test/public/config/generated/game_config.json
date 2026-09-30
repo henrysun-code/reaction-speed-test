@@ -1,0 +1,7103 @@
+{
+  "GameSettings": [
+    {
+      "key": "gameId",
+      "value": "reaction-speed-test",
+      "description": "gameId"
+    },
+    {
+      "key": "gameName",
+      "value": "反應速度測試",
+      "description": "gameName"
+    },
+    {
+      "key": "gameVersion",
+      "value": "1.0.0",
+      "description": "gameVersion"
+    },
+    {
+      "key": "debugMode",
+      "value": false,
+      "description": "debugMode"
+    },
+    {
+      "key": "soundEnabled",
+      "value": true,
+      "description": "soundEnabled"
+    },
+    {
+      "key": "language",
+      "value": "zh-Hant",
+      "description": "language"
+    },
+    {
+      "key": "historyLimit",
+      "value": 100,
+      "description": "最大保存筆數"
+    },
+    {
+      "key": "positionMin",
+      "value": 0.2,
+      "description": "水平位置下限 0–1"
+    },
+    {
+      "key": "positionMax",
+      "value": 0.8,
+      "description": "水平位置上限 0–1"
+    },
+    {
+      "key": "inputGuardMs",
+      "value": 280,
+      "description": "連點保護毫秒"
+    },
+    {
+      "key": "countdownSeconds",
+      "value": 3,
+      "description": "countdownSeconds"
+    }
+  ],
+  "Assets": [
+    {
+      "id": "gold",
+      "category": "target",
+      "file": "ABT+2.png",
+      "enabled": true,
+      "description": "ABT+2 商品原圖"
+    },
+    {
+      "id": "brown",
+      "category": "target",
+      "file": "BBB+1.png",
+      "enabled": true,
+      "description": "BBB+1 商品原圖"
+    },
+    {
+      "id": "red",
+      "category": "target",
+      "file": "MTT+10.png",
+      "enabled": true,
+      "description": "MTT+10 商品原圖"
+    },
+    {
+      "id": "blue",
+      "category": "target",
+      "file": "NAP+1.png",
+      "enabled": true,
+      "description": "NAP+1 商品原圖"
+    },
+    {
+      "id": "green",
+      "category": "target",
+      "file": "PPA+1.png",
+      "enabled": true,
+      "description": "PPA+1 商品原圖"
+    },
+    {
+      "id": "noise",
+      "category": "distractor",
+      "file": "noise.svg",
+      "enabled": true,
+      "description": "灰色星星"
+    },
+    {
+      "id": "gold-square",
+      "category": "target",
+      "file": "BBB+1.png",
+      "enabled": true,
+      "description": "BBB+1 商品原圖"
+    },
+    {
+      "id": "gold-triangle",
+      "category": "target",
+      "file": "MTT+10.png",
+      "enabled": true,
+      "description": "MTT+10 商品原圖"
+    },
+    {
+      "id": "gold-diamond",
+      "category": "target",
+      "file": "NAP+1.png",
+      "enabled": true,
+      "description": "NAP+1 商品原圖"
+    },
+    {
+      "id": "gold-cross",
+      "category": "target",
+      "file": "PPA+1.png",
+      "enabled": true,
+      "description": "PPA+1 商品原圖"
+    },
+    {
+      "id": "product-qss",
+      "category": "target",
+      "file": "QSS+8.png",
+      "enabled": true,
+      "description": "QSS+8 商品原圖"
+    },
+    {
+      "id": "product-sdd",
+      "category": "target",
+      "file": "SDD+10.png",
+      "enabled": true,
+      "description": "SDD+10 商品原圖"
+    },
+    {
+      "id": "product-yss",
+      "category": "target",
+      "file": "YSS+2.png",
+      "enabled": true,
+      "description": "YSS+2 商品原圖"
+    }
+  ],
+  "Animations": [],
+  "Audio": [
+    {
+      "id": "hit",
+      "category": "sfx",
+      "file": "hit.wav",
+      "volume": 0.18,
+      "loop": false,
+      "enabled": true
+    }
+  ],
+  "Text": [
+    {
+      "key": "disclaimer",
+      "text": "結果僅代表本次遊戲中的反應表現，不作為醫療或健康診斷。"
+    }
+  ],
+  "Levels": [
+    {
+      "levelId": "1",
+      "name": "單一色環／單一商品",
+      "ruleId": "catalogue-1",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 600,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 200,
+      "templateKey": "single:single:0111011101110111:none",
+      "progressTemplateId": "1"
+    },
+    {
+      "levelId": "2",
+      "name": "多種色環／單一商品",
+      "ruleId": "catalogue-2",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 300,
+      "templateKey": "multiple:single:0111011101110111:none",
+      "progressTemplateId": "2"
+    },
+    {
+      "levelId": "3",
+      "name": "單一色環／多種商品",
+      "ruleId": "catalogue-3",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 300,
+      "templateKey": "single:multiple:0111011101110111:none",
+      "progressTemplateId": "3"
+    },
+    {
+      "levelId": "4",
+      "name": "多種色環／多種商品",
+      "ruleId": "catalogue-4",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 400,
+      "templateKey": "multiple:multiple:0111011101110111:none",
+      "progressTemplateId": "4"
+    },
+    {
+      "levelId": "5",
+      "name": "排除色環／單一商品",
+      "ruleId": "catalogue-5",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 210,
+      "templateKey": "exclude:single:0111011101110111:none",
+      "progressTemplateId": "5"
+    },
+    {
+      "levelId": "6",
+      "name": "單一色環／排除商品",
+      "ruleId": "catalogue-6",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 210,
+      "templateKey": "single:exclude:0111011101110111:none",
+      "progressTemplateId": "6"
+    },
+    {
+      "levelId": "7",
+      "name": "排除色環／多種商品",
+      "ruleId": "catalogue-7",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 310,
+      "templateKey": "exclude:multiple:0111011101110111:none",
+      "progressTemplateId": "7"
+    },
+    {
+      "levelId": "8",
+      "name": "多種色環／排除商品",
+      "ruleId": "catalogue-8",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 310,
+      "templateKey": "multiple:exclude:0111011101110111:none",
+      "progressTemplateId": "8"
+    },
+    {
+      "levelId": "9",
+      "name": "排除色環／排除商品",
+      "ruleId": "catalogue-9",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 220,
+      "templateKey": "exclude:exclude:0111011101110111:none",
+      "progressTemplateId": "9"
+    },
+    {
+      "levelId": "10",
+      "name": "單一色環／單一商品／位置",
+      "ruleId": "catalogue-10",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 300,
+      "templateKey": "single:single:0111111101111111:none",
+      "progressTemplateId": "10"
+    },
+    {
+      "levelId": "11",
+      "name": "單一色環／單一商品／位置",
+      "ruleId": "catalogue-13",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 307,
+      "templateKey": "single:single:0000011100000111:none",
+      "progressTemplateId": "13"
+    },
+    {
+      "levelId": "12",
+      "name": "單一色環／單一商品／位置",
+      "ruleId": "catalogue-14",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 307,
+      "templateKey": "single:single:0011011100110111:none",
+      "progressTemplateId": "14"
+    },
+    {
+      "levelId": "13",
+      "name": "單一色環／單一商品／位置",
+      "ruleId": "catalogue-15",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 307,
+      "templateKey": "single:single:0101011101010111:none",
+      "progressTemplateId": "15"
+    },
+    {
+      "levelId": "14",
+      "name": "排除色環／單一商品／位置",
+      "ruleId": "catalogue-17",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 310,
+      "templateKey": "exclude:single:0111111101111111:none",
+      "progressTemplateId": "17"
+    },
+    {
+      "levelId": "15",
+      "name": "單一色環／排除商品／位置",
+      "ruleId": "catalogue-18",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 310,
+      "templateKey": "single:exclude:0111111101111111:none",
+      "progressTemplateId": "18"
+    },
+    {
+      "levelId": "16",
+      "name": "排除色環／單一商品／位置",
+      "ruleId": "catalogue-30",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 317,
+      "templateKey": "exclude:single:0000011100000111:none",
+      "progressTemplateId": "30"
+    },
+    {
+      "levelId": "17",
+      "name": "排除色環／單一商品／位置",
+      "ruleId": "catalogue-31",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 317,
+      "templateKey": "exclude:single:0011011100110111:none",
+      "progressTemplateId": "31"
+    },
+    {
+      "levelId": "18",
+      "name": "排除色環／單一商品／位置",
+      "ruleId": "catalogue-32",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 317,
+      "templateKey": "exclude:single:0101011101010111:none",
+      "progressTemplateId": "32"
+    },
+    {
+      "levelId": "19",
+      "name": "單一色環／排除商品／位置",
+      "ruleId": "catalogue-33",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 317,
+      "templateKey": "single:exclude:0000011100000111:none",
+      "progressTemplateId": "33"
+    },
+    {
+      "levelId": "20",
+      "name": "單一色環／排除商品／位置",
+      "ruleId": "catalogue-34",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 317,
+      "templateKey": "single:exclude:0011011100110111:none",
+      "progressTemplateId": "34"
+    },
+    {
+      "levelId": "21",
+      "name": "單一色環／排除商品／位置",
+      "ruleId": "catalogue-35",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 750,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 317,
+      "templateKey": "single:exclude:0101011101010111:none",
+      "progressTemplateId": "35"
+    },
+    {
+      "levelId": "22",
+      "name": "排除色環／排除商品／位置",
+      "ruleId": "catalogue-36",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 320,
+      "templateKey": "exclude:exclude:0111111101111111:none",
+      "progressTemplateId": "36"
+    },
+    {
+      "levelId": "23",
+      "name": "多種色環／單一商品／位置",
+      "ruleId": "catalogue-11",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 400,
+      "templateKey": "multiple:single:0111111101111111:none",
+      "progressTemplateId": "11"
+    },
+    {
+      "levelId": "24",
+      "name": "單一色環／多種商品／位置",
+      "ruleId": "catalogue-12",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 400,
+      "templateKey": "single:multiple:0111111101111111:none",
+      "progressTemplateId": "12"
+    },
+    {
+      "levelId": "25",
+      "name": "多種色環／單一商品／位置",
+      "ruleId": "catalogue-19",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "multiple:single:0000011100000111:none",
+      "progressTemplateId": "19"
+    },
+    {
+      "levelId": "26",
+      "name": "多種色環／單一商品／位置",
+      "ruleId": "catalogue-20",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "multiple:single:0011011100110111:none",
+      "progressTemplateId": "20"
+    },
+    {
+      "levelId": "27",
+      "name": "多種色環／單一商品／位置",
+      "ruleId": "catalogue-21",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "multiple:single:0101011101010111:none",
+      "progressTemplateId": "21"
+    },
+    {
+      "levelId": "28",
+      "name": "單一色環／多種商品／位置",
+      "ruleId": "catalogue-22",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:multiple:0000011100000111:none",
+      "progressTemplateId": "22"
+    },
+    {
+      "levelId": "29",
+      "name": "單一色環／多種商品／位置",
+      "ruleId": "catalogue-23",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:multiple:0011011100110111:none",
+      "progressTemplateId": "23"
+    },
+    {
+      "levelId": "30",
+      "name": "單一色環／多種商品／位置",
+      "ruleId": "catalogue-24",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:multiple:0101011101010111:none",
+      "progressTemplateId": "24"
+    },
+    {
+      "levelId": "31",
+      "name": "排除色環／多種商品／位置",
+      "ruleId": "catalogue-25",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 410,
+      "templateKey": "exclude:multiple:0111111101111111:none",
+      "progressTemplateId": "25"
+    },
+    {
+      "levelId": "32",
+      "name": "多種色環／排除商品／位置",
+      "ruleId": "catalogue-26",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 410,
+      "templateKey": "multiple:exclude:0111111101111111:none",
+      "progressTemplateId": "26"
+    },
+    {
+      "levelId": "33",
+      "name": "排除色環／多種商品／位置",
+      "ruleId": "catalogue-37",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 417,
+      "templateKey": "exclude:multiple:0000011100000111:none",
+      "progressTemplateId": "37"
+    },
+    {
+      "levelId": "34",
+      "name": "排除色環／多種商品／位置",
+      "ruleId": "catalogue-38",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 417,
+      "templateKey": "exclude:multiple:0011011100110111:none",
+      "progressTemplateId": "38"
+    },
+    {
+      "levelId": "35",
+      "name": "排除色環／多種商品／位置",
+      "ruleId": "catalogue-39",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 417,
+      "templateKey": "exclude:multiple:0101011101010111:none",
+      "progressTemplateId": "39"
+    },
+    {
+      "levelId": "36",
+      "name": "多種色環／排除商品／位置",
+      "ruleId": "catalogue-40",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 417,
+      "templateKey": "multiple:exclude:0000011100000111:none",
+      "progressTemplateId": "40"
+    },
+    {
+      "levelId": "37",
+      "name": "多種色環／多種商品／位置",
+      "ruleId": "catalogue-16",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 500,
+      "templateKey": "multiple:multiple:0111111101111111:none",
+      "progressTemplateId": "16"
+    },
+    {
+      "levelId": "38",
+      "name": "多種色環／多種商品／位置",
+      "ruleId": "catalogue-27",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:multiple:0000011100000111:none",
+      "progressTemplateId": "27"
+    },
+    {
+      "levelId": "39",
+      "name": "多種色環／多種商品／位置",
+      "ruleId": "catalogue-28",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:multiple:0011011100110111:none",
+      "progressTemplateId": "28"
+    },
+    {
+      "levelId": "40",
+      "name": "多種色環／多種商品／位置",
+      "ruleId": "catalogue-29",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:multiple:0101011101010111:none",
+      "progressTemplateId": "29"
+    },
+    {
+      "levelId": "41",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-41",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 400,
+      "templateKey": "single:single:0111111111111111:present",
+      "progressTemplateId": "41"
+    },
+    {
+      "levelId": "42",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-42",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 401,
+      "templateKey": "single:single:0111111111111111:absent",
+      "progressTemplateId": "42"
+    },
+    {
+      "levelId": "43",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-44",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0011011111111111:present",
+      "progressTemplateId": "44"
+    },
+    {
+      "levelId": "44",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-45",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0011111101111111:present",
+      "progressTemplateId": "45"
+    },
+    {
+      "levelId": "45",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-49",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0000000001111111:present",
+      "progressTemplateId": "49"
+    },
+    {
+      "levelId": "46",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-50",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0000011100001111:present",
+      "progressTemplateId": "50"
+    },
+    {
+      "levelId": "47",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-55",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0101011111111111:present",
+      "progressTemplateId": "55"
+    },
+    {
+      "levelId": "48",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-56",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0101111101111111:present",
+      "progressTemplateId": "56"
+    },
+    {
+      "levelId": "49",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-57",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0111011101111111:present",
+      "progressTemplateId": "57"
+    },
+    {
+      "levelId": "50",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-78",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 407,
+      "templateKey": "single:single:0000011101110111:present",
+      "progressTemplateId": "78"
+    },
+    {
+      "levelId": "51",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-52",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 408,
+      "templateKey": "single:single:0011011111111111:absent",
+      "progressTemplateId": "52"
+    },
+    {
+      "levelId": "52",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-53",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 408,
+      "templateKey": "single:single:0011111101111111:absent",
+      "progressTemplateId": "53"
+    },
+    {
+      "levelId": "53",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-60",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 408,
+      "templateKey": "single:single:0000000001111111:absent",
+      "progressTemplateId": "60"
+    },
+    {
+      "levelId": "54",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-61",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 408,
+      "templateKey": "single:single:0000011100001111:absent",
+      "progressTemplateId": "61"
+    },
+    {
+      "levelId": "55",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-64",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 408,
+      "templateKey": "single:single:0101011111111111:absent",
+      "progressTemplateId": "64"
+    },
+    {
+      "levelId": "56",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-65",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 408,
+      "templateKey": "single:single:0101111101111111:absent",
+      "progressTemplateId": "65"
+    },
+    {
+      "levelId": "57",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-66",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 408,
+      "templateKey": "single:single:0111011101111111:absent",
+      "progressTemplateId": "66"
+    },
+    {
+      "levelId": "58",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-43",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 409,
+      "templateKey": "single:single:0000000000000111:present",
+      "progressTemplateId": "43"
+    },
+    {
+      "levelId": "59",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-51",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 409,
+      "templateKey": "single:single:0011001100110111:present",
+      "progressTemplateId": "51"
+    },
+    {
+      "levelId": "60",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-54",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 409,
+      "templateKey": "single:single:0101010101010111:present",
+      "progressTemplateId": "54"
+    },
+    {
+      "levelId": "61",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-76",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 409,
+      "templateKey": "single:single:0000001101010111:present",
+      "progressTemplateId": "76"
+    },
+    {
+      "levelId": "62",
+      "name": "單一色環／單一商品／星星有",
+      "ruleId": "catalogue-77",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 409,
+      "templateKey": "single:single:0000010100110111:present",
+      "progressTemplateId": "77"
+    },
+    {
+      "levelId": "63",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-48",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 410,
+      "templateKey": "single:single:0000000000000111:absent",
+      "progressTemplateId": "48"
+    },
+    {
+      "levelId": "64",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-62",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 410,
+      "templateKey": "single:single:0011001100110111:absent",
+      "progressTemplateId": "62"
+    },
+    {
+      "levelId": "65",
+      "name": "單一色環／單一商品／星星無",
+      "ruleId": "catalogue-63",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 410,
+      "templateKey": "single:single:0101010101010111:absent",
+      "progressTemplateId": "63"
+    },
+    {
+      "levelId": "66",
+      "name": "排除色環／單一商品／星星有",
+      "ruleId": "catalogue-74",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 410,
+      "templateKey": "exclude:single:0111111111111111:present",
+      "progressTemplateId": "74"
+    },
+    {
+      "levelId": "67",
+      "name": "單一色環／排除商品／星星有",
+      "ruleId": "catalogue-75",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 410,
+      "templateKey": "single:exclude:0111111111111111:present",
+      "progressTemplateId": "75"
+    },
+    {
+      "levelId": "68",
+      "name": "排除色環／單一商品／星星無",
+      "ruleId": "catalogue-100",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 411,
+      "templateKey": "exclude:single:0111111111111111:absent",
+      "progressTemplateId": "100"
+    },
+    {
+      "levelId": "69",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-46",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 500,
+      "templateKey": "multiple:single:0111111111111111:present",
+      "progressTemplateId": "46"
+    },
+    {
+      "levelId": "70",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-47",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 500,
+      "templateKey": "single:multiple:0111111111111111:present",
+      "progressTemplateId": "47"
+    },
+    {
+      "levelId": "71",
+      "name": "多種色環／單一商品／星星無",
+      "ruleId": "catalogue-58",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 501,
+      "templateKey": "multiple:single:0111111111111111:absent",
+      "progressTemplateId": "58"
+    },
+    {
+      "levelId": "72",
+      "name": "單一色環／多種商品／星星無",
+      "ruleId": "catalogue-59",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 501,
+      "templateKey": "single:multiple:0111111111111111:absent",
+      "progressTemplateId": "59"
+    },
+    {
+      "levelId": "73",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-68",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:single:0011011111111111:present",
+      "progressTemplateId": "68"
+    },
+    {
+      "levelId": "74",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-69",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:single:0011111101111111:present",
+      "progressTemplateId": "69"
+    },
+    {
+      "levelId": "75",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-71",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "single:multiple:0011011111111111:present",
+      "progressTemplateId": "71"
+    },
+    {
+      "levelId": "76",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-72",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "single:multiple:0011111101111111:present",
+      "progressTemplateId": "72"
+    },
+    {
+      "levelId": "77",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-80",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:single:0000000001111111:present",
+      "progressTemplateId": "80"
+    },
+    {
+      "levelId": "78",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-81",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:single:0000011100001111:present",
+      "progressTemplateId": "81"
+    },
+    {
+      "levelId": "79",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-86",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:single:0101011111111111:present",
+      "progressTemplateId": "86"
+    },
+    {
+      "levelId": "80",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-87",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:single:0101111101111111:present",
+      "progressTemplateId": "87"
+    },
+    {
+      "levelId": "81",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-88",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "multiple:single:0111011101111111:present",
+      "progressTemplateId": "88"
+    },
+    {
+      "levelId": "82",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-90",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "single:multiple:0000000001111111:present",
+      "progressTemplateId": "90"
+    },
+    {
+      "levelId": "83",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-91",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "single:multiple:0000011100001111:present",
+      "progressTemplateId": "91"
+    },
+    {
+      "levelId": "84",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-96",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "single:multiple:0101011111111111:present",
+      "progressTemplateId": "96"
+    },
+    {
+      "levelId": "85",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-97",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "single:multiple:0101111101111111:present",
+      "progressTemplateId": "97"
+    },
+    {
+      "levelId": "86",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-98",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 507,
+      "templateKey": "single:multiple:0111011101111111:present",
+      "progressTemplateId": "98"
+    },
+    {
+      "levelId": "87",
+      "name": "多種色環／單一商品／星星無",
+      "ruleId": "catalogue-83",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 508,
+      "templateKey": "multiple:single:0011011111111111:absent",
+      "progressTemplateId": "83"
+    },
+    {
+      "levelId": "88",
+      "name": "多種色環／單一商品／星星無",
+      "ruleId": "catalogue-84",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 508,
+      "templateKey": "multiple:single:0011111101111111:absent",
+      "progressTemplateId": "84"
+    },
+    {
+      "levelId": "89",
+      "name": "單一色環／多種商品／星星無",
+      "ruleId": "catalogue-93",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 508,
+      "templateKey": "single:multiple:0011011111111111:absent",
+      "progressTemplateId": "93"
+    },
+    {
+      "levelId": "90",
+      "name": "單一色環／多種商品／星星無",
+      "ruleId": "catalogue-94",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 508,
+      "templateKey": "single:multiple:0011111101111111:absent",
+      "progressTemplateId": "94"
+    },
+    {
+      "levelId": "91",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-67",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 509,
+      "templateKey": "multiple:single:0000000000000111:present",
+      "progressTemplateId": "67"
+    },
+    {
+      "levelId": "92",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-70",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 509,
+      "templateKey": "single:multiple:0000000000000111:present",
+      "progressTemplateId": "70"
+    },
+    {
+      "levelId": "93",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-82",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 509,
+      "templateKey": "multiple:single:0011001100110111:present",
+      "progressTemplateId": "82"
+    },
+    {
+      "levelId": "94",
+      "name": "多種色環／單一商品／星星有",
+      "ruleId": "catalogue-85",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 509,
+      "templateKey": "multiple:single:0101010101010111:present",
+      "progressTemplateId": "85"
+    },
+    {
+      "levelId": "95",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-92",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 509,
+      "templateKey": "single:multiple:0011001100110111:present",
+      "progressTemplateId": "92"
+    },
+    {
+      "levelId": "96",
+      "name": "單一色環／多種商品／星星有",
+      "ruleId": "catalogue-95",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 509,
+      "templateKey": "single:multiple:0101010101010111:present",
+      "progressTemplateId": "95"
+    },
+    {
+      "levelId": "97",
+      "name": "多種色環／單一商品／星星無",
+      "ruleId": "catalogue-79",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 510,
+      "templateKey": "multiple:single:0000000000000111:absent",
+      "progressTemplateId": "79"
+    },
+    {
+      "levelId": "98",
+      "name": "單一色環／多種商品／星星無",
+      "ruleId": "catalogue-89",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 510,
+      "templateKey": "single:multiple:0000000000000111:absent",
+      "progressTemplateId": "89"
+    },
+    {
+      "levelId": "99",
+      "name": "多種色環／多種商品／星星有",
+      "ruleId": "catalogue-73",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 600,
+      "templateKey": "multiple:multiple:0111111111111111:present",
+      "progressTemplateId": "73"
+    },
+    {
+      "levelId": "100",
+      "name": "多種色環／多種商品／星星無",
+      "ruleId": "catalogue-99",
+      "stimulusCount": 18,
+      "timeLimit": 60,
+      "minInterval": 500,
+      "maxInterval": 850,
+      "stimulusDuration": 1300,
+      "requiredAccuracy": 0.8,
+      "targetRatio": 0.55,
+      "distractorRatio": 0.5,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "starAccuracy": 0.9,
+      "starAverageMs": 900,
+      "randomizeTargets": true,
+      "ruleRevision": "or-v1",
+      "difficulty": 601,
+      "templateKey": "multiple:multiple:0111111111111111:absent",
+      "progressTemplateId": "99"
+    }
+  ],
+  "Rules": [
+    {
+      "id": "gold",
+      "name": "色環辨識",
+      "description": "看到金色商品就點擊，其餘不要點。",
+      "condition": {
+        "targetType": "gold"
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "brown",
+      "name": "色環練習",
+      "description": "看到棕色商品就點擊，其餘不要點。",
+      "condition": {
+        "targetType": "brown"
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "forbid",
+      "name": "排除商品",
+      "description": "金色商品要點，但 mTOR（MTT+10）不能點；金色的 mTOR 也不能點。其他顏色不要點。",
+      "condition": {
+        "targetType": "gold",
+        "forbiddenShape": "triangle"
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "left",
+      "name": "左側色環",
+      "description": "只有左半邊的金色商品可以點擊。",
+      "condition": {
+        "targetType": "gold",
+        "positionCondition": "left"
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "dual",
+      "name": "雙色目標",
+      "description": "金色商品與棕色商品都可以點擊。",
+      "condition": {
+        "allowedTypes": [
+          "gold",
+          "brown"
+        ]
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "distract",
+      "name": "星星禁點",
+      "description": "有灰色星星時，甚麼都別點。沒有星星時，只點金色商品。",
+      "condition": {
+        "targetType": "gold",
+        "distractorCondition": "absent"
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "no-red",
+      "name": "排除色環",
+      "description": "紅色商品不能點，其餘色環的商品都要點。",
+      "condition": {
+        "forbiddenType": "red"
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "switch",
+      "name": "中途切換",
+      "description": "前半點金色商品，後半改點棕色商品。",
+      "condition": {
+        "targetType": "gold"
+      },
+      "ruleSwitch": "brown"
+    },
+    {
+      "id": "compound",
+      "name": "複合判斷",
+      "description": "點左側金色商品，或右側棕色商品。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold",
+              "positionCondition": "left"
+            },
+            {
+              "targetType": "brown",
+              "positionCondition": "right"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "combined",
+      "name": "綜合模式",
+      "description": "前半：左側金色或右側棕色；後半：有灰色星星時甚麼都別點，沒有時只點金色商品。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold",
+              "positionCondition": "left"
+            },
+            {
+              "targetType": "brown",
+              "positionCondition": "right"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": "distract"
+    },
+    {
+      "id": "clear",
+      "name": "無干擾時點擊",
+      "description": "只有沒有灰色星星時，才點擊金色商品。",
+      "condition": {
+        "targetType": "gold",
+        "distractorCondition": "absent"
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-1",
+      "name": "單一色環／單一商品",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-2",
+      "name": "多種色環／單一商品",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-3",
+      "name": "單一色環／多種商品",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "targetShape": "square"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-4",
+      "name": "多種色環／多種商品",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "targetShape": "square"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-5",
+      "name": "排除色環／單一商品",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-6",
+      "name": "單一色環／排除商品",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （商品不是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "forbiddenShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-7",
+      "name": "排除色環／多種商品",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "targetShape": "square"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-8",
+      "name": "多種色環／排除商品",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （商品不是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "forbiddenShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-9",
+      "name": "排除色環／排除商品",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （商品不是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "forbiddenShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-10",
+      "name": "單一色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-11",
+      "name": "多種色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-12",
+      "name": "單一色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-13",
+      "name": "單一色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （商品是 ABT+2）） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-14",
+      "name": "單一色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-15",
+      "name": "單一色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-16",
+      "name": "多種色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-17",
+      "name": "排除色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（商品是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-18",
+      "name": "單一色環／排除商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品不是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "forbiddenShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-19",
+      "name": "多種色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 或 （商品是 ABT+2）） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-20",
+      "name": "多種色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 而且 （出現在左半邊）） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-21",
+      "name": "多種色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-22",
+      "name": "單一色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-23",
+      "name": "單一色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "targetShape": "square"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-24",
+      "name": "單一色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-25",
+      "name": "排除色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-26",
+      "name": "多種色環／排除商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品不是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "forbiddenShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-27",
+      "name": "多種色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-28",
+      "name": "多種色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "targetShape": "square"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-29",
+      "name": "多種色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-30",
+      "name": "排除色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈不是金色） 或 （商品是 ABT+2）） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "forbiddenType": "gold"
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-31",
+      "name": "排除色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈不是金色） 而且 （出現在左半邊）） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "forbiddenType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-32",
+      "name": "排除色環／單一商品／位置",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（商品是 ABT+2） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-33",
+      "name": "單一色環／排除商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （商品不是 ABT+2）） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "forbiddenShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-34",
+      "name": "單一色環／排除商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （商品不是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "forbiddenShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-35",
+      "name": "單一色環／排除商品／位置",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品不是 ABT+2） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "forbiddenShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-36",
+      "name": "排除色環／排除商品／位置",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（商品不是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "forbiddenShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-37",
+      "name": "排除色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈不是金色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "forbiddenType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-38",
+      "name": "排除色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈不是金色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "forbiddenType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "targetShape": "square"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-39",
+      "name": "排除色環／多種商品／位置",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-40",
+      "name": "多種色環／排除商品／位置",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 或 （商品不是 ABT+2）） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "forbiddenShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-41",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 或 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-42",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 或 （畫面沒有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-43",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （商品是 ABT+2）） 而且 （（出現在左半邊） 而且 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "positionCondition": "left"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-44",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 或 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-45",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （畫面有灰色星星）） 或 （（商品是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-46",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 或 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-47",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （（出現在左半邊） 或 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-48",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （商品是 ABT+2）） 而且 （（出現在左半邊） 而且 （畫面沒有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "positionCondition": "left"
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-49",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（商品是 ABT+2） 或 （出現在左半邊））） 而且 （畫面有灰色星星）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "distractorCondition": "present"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-50",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（商品是 ABT+2） 或 （畫面有灰色星星））） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-51",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （（出現在左半邊） 而且 （畫面有灰色星星））） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-52",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 或 （畫面沒有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-53",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （畫面沒有灰色星星）） 或 （（商品是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-54",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 而且 （（出現在左半邊） 而且 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-55",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 而且 （出現在左半邊）） 或 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-56",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 而且 （畫面有灰色星星）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-57",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 而且 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-58",
+      "name": "多種色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 或 （畫面沒有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-59",
+      "name": "單一色環／多種商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （（出現在左半邊） 或 （畫面沒有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-60",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（商品是 ABT+2） 或 （出現在左半邊））） 而且 （畫面沒有灰色星星）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "distractorCondition": "absent"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-61",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（商品是 ABT+2） 或 （畫面沒有灰色星星））） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-62",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （（出現在左半邊） 而且 （畫面沒有灰色星星））） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-63",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 而且 （（出現在左半邊） 而且 （畫面沒有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-64",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 而且 （出現在左半邊）） 或 （畫面沒有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-65",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 而且 （畫面沒有灰色星星）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-66",
+      "name": "單一色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 而且 （畫面沒有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-67",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 或 （商品是 ABT+2）） 而且 （（出現在左半邊） 而且 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "positionCondition": "left"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-68",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 或 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-69",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 而且 （畫面有灰色星星）） 或 （（商品是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-70",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））） 而且 （（出現在左半邊） 而且 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "positionCondition": "left"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-71",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-72",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （畫面有灰色星星）） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-73",
+      "name": "多種色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （（出現在左半邊） 或 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-74",
+      "name": "排除色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 或 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-75",
+      "name": "單一色環／排除商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（商品不是 ABT+2） 或 （（出現在左半邊） 或 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "forbiddenShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-76",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （畫面有灰色星星）） 或 （（商品是 ABT+2） 而且 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-77",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 而且 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-78",
+      "name": "單一色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （商品是 ABT+2）） 而且 （（出現在左半邊） 或 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "positionCondition": "left"
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-79",
+      "name": "多種色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 或 （商品是 ABT+2）） 而且 （（出現在左半邊） 而且 （畫面沒有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "targetShape": "circle"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "positionCondition": "left"
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-80",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （出現在左半邊））） 而且 （畫面有灰色星星）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "distractorCondition": "present"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-81",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （畫面有灰色星星））） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-82",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 而且 （（出現在左半邊） 而且 （畫面有灰色星星））） 或 （商品是 ABT+2）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "targetShape": "circle"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-83",
+      "name": "多種色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 而且 （出現在左半邊）） 或 （（商品是 ABT+2） 或 （畫面沒有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-84",
+      "name": "多種色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色、棕色其中一色） 而且 （畫面沒有灰色星星）） 或 （（商品是 ABT+2） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "allowedTypes": [
+                      "gold",
+                      "brown"
+                    ]
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-85",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 而且 （（出現在左半邊） 而且 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-86",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（（商品是 ABT+2） 而且 （出現在左半邊）） 或 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-87",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（（商品是 ABT+2） 而且 （畫面有灰色星星）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-88",
+      "name": "多種色環／單一商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 而且 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-89",
+      "name": "單一色環／多種商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））） 而且 （（出現在左半邊） 而且 （畫面沒有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "positionCondition": "left"
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-90",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （出現在左半邊））） 而且 （畫面有灰色星星）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "compoundCondition": {
+                            "op": "any",
+                            "conditions": [
+                              {
+                                "targetShape": "circle"
+                              },
+                              {
+                                "targetShape": "square"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "distractorCondition": "present"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-91",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （畫面有灰色星星））） 而且 （出現在左半邊）。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "all",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "compoundCondition": {
+                            "op": "any",
+                            "conditions": [
+                              {
+                                "targetShape": "circle"
+                              },
+                              {
+                                "targetShape": "square"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "positionCondition": "left"
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-92",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （（出現在左半邊） 而且 （畫面有灰色星星））） 或 （（商品是 ABT+2） 或 （商品是 BBB+1））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "targetShape": "square"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-93",
+      "name": "單一色環／多種商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （出現在左半邊）） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （畫面沒有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-94",
+      "name": "單一色環／多種商品／星星無",
+      "description": "只點符合以下條件的商品：（（外圈是金色） 而且 （畫面沒有灰色星星）） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "targetType": "gold"
+                  },
+                  {
+                    "distractorCondition": "absent"
+                  }
+                ]
+              }
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-95",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 而且 （（出現在左半邊） 而且 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "all",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-96",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（（商品是 ABT+2） 或 （商品是 BBB+1）） 而且 （出現在左半邊）） 或 （畫面有灰色星星））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "compoundCondition": {
+                            "op": "any",
+                            "conditions": [
+                              {
+                                "targetShape": "circle"
+                              },
+                              {
+                                "targetShape": "square"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "positionCondition": "left"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "distractorCondition": "present"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-97",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（（商品是 ABT+2） 或 （商品是 BBB+1）） 而且 （畫面有灰色星星）） 或 （出現在左半邊））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "compoundCondition": {
+                            "op": "any",
+                            "conditions": [
+                              {
+                                "targetShape": "circle"
+                              },
+                              {
+                                "targetShape": "square"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "positionCondition": "left"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-98",
+      "name": "單一色環／多種商品／星星有",
+      "description": "只點符合以下條件的商品：（外圈是金色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （（出現在左半邊） 而且 （畫面有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "all",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "present"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-99",
+      "name": "多種色環／多種商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈是金色、棕色其中一色） 或 （（（商品是 ABT+2） 或 （商品是 BBB+1）） 或 （（出現在左半邊） 或 （畫面沒有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "allowedTypes": [
+                "gold",
+                "brown"
+              ]
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "targetShape": "circle"
+                        },
+                        {
+                          "targetShape": "square"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    },
+    {
+      "id": "catalogue-100",
+      "name": "排除色環／單一商品／星星無",
+      "description": "只點符合以下條件的商品：（外圈不是金色） 或 （（商品是 ABT+2） 或 （（出現在左半邊） 或 （畫面沒有灰色星星）））。其餘不要點。",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "forbiddenType": "gold"
+            },
+            {
+              "compoundCondition": {
+                "op": "any",
+                "conditions": [
+                  {
+                    "targetShape": "circle"
+                  },
+                  {
+                    "compoundCondition": {
+                      "op": "any",
+                      "conditions": [
+                        {
+                          "positionCondition": "left"
+                        },
+                        {
+                          "distractorCondition": "absent"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ruleSwitch": ""
+    }
+  ],
+  "Stimuli": [
+    {
+      "id": "target_01",
+      "name": "金色ABT+2 商品",
+      "type": "gold",
+      "image": "gold",
+      "enabled": true,
+      "shape": "circle"
+    },
+    {
+      "id": "target_02",
+      "name": "棕色BBB+1 商品",
+      "type": "brown",
+      "image": "brown",
+      "enabled": true,
+      "shape": "square"
+    },
+    {
+      "id": "target_03",
+      "name": "紅色mTOR（MTT+10） 商品",
+      "type": "red",
+      "image": "red",
+      "enabled": true,
+      "shape": "triangle"
+    },
+    {
+      "id": "target_04",
+      "name": "藍色NAP+1 商品",
+      "type": "blue",
+      "image": "blue",
+      "enabled": true,
+      "shape": "diamond"
+    },
+    {
+      "id": "target_05",
+      "name": "綠色PPA+1 商品",
+      "type": "green",
+      "image": "green",
+      "enabled": true,
+      "shape": "cross"
+    },
+    {
+      "id": "target_gold_square",
+      "name": "金色BBB+1 商品",
+      "type": "gold",
+      "image": "gold-square",
+      "enabled": true,
+      "shape": "square"
+    },
+    {
+      "id": "target_gold_triangle",
+      "name": "金色mTOR（MTT+10） 商品",
+      "type": "gold",
+      "image": "gold-triangle",
+      "enabled": true,
+      "shape": "triangle"
+    },
+    {
+      "id": "target_gold_diamond",
+      "name": "金色NAP+1 商品",
+      "type": "gold",
+      "image": "gold-diamond",
+      "enabled": true,
+      "shape": "diamond"
+    },
+    {
+      "id": "target_gold_cross",
+      "name": "金色PPA+1 商品",
+      "type": "gold",
+      "image": "gold-cross",
+      "enabled": true,
+      "shape": "cross"
+    },
+    {
+      "id": "product_ABT_2_brown",
+      "name": "棕色ABT+2 商品",
+      "type": "brown",
+      "image": "gold",
+      "enabled": true,
+      "shape": "circle"
+    },
+    {
+      "id": "product_ABT_2_red",
+      "name": "紅色ABT+2 商品",
+      "type": "red",
+      "image": "gold",
+      "enabled": true,
+      "shape": "circle"
+    },
+    {
+      "id": "product_ABT_2_blue",
+      "name": "藍色ABT+2 商品",
+      "type": "blue",
+      "image": "gold",
+      "enabled": true,
+      "shape": "circle"
+    },
+    {
+      "id": "product_ABT_2_green",
+      "name": "綠色ABT+2 商品",
+      "type": "green",
+      "image": "gold",
+      "enabled": true,
+      "shape": "circle"
+    },
+    {
+      "id": "product_BBB_1_red",
+      "name": "紅色BBB+1 商品",
+      "type": "red",
+      "image": "brown",
+      "enabled": true,
+      "shape": "square"
+    },
+    {
+      "id": "product_BBB_1_blue",
+      "name": "藍色BBB+1 商品",
+      "type": "blue",
+      "image": "brown",
+      "enabled": true,
+      "shape": "square"
+    },
+    {
+      "id": "product_BBB_1_green",
+      "name": "綠色BBB+1 商品",
+      "type": "green",
+      "image": "brown",
+      "enabled": true,
+      "shape": "square"
+    },
+    {
+      "id": "product_MTT_10_brown",
+      "name": "棕色mTOR（MTT+10） 商品",
+      "type": "brown",
+      "image": "red",
+      "enabled": true,
+      "shape": "triangle"
+    },
+    {
+      "id": "product_MTT_10_blue",
+      "name": "藍色mTOR（MTT+10） 商品",
+      "type": "blue",
+      "image": "red",
+      "enabled": true,
+      "shape": "triangle"
+    },
+    {
+      "id": "product_MTT_10_green",
+      "name": "綠色mTOR（MTT+10） 商品",
+      "type": "green",
+      "image": "red",
+      "enabled": true,
+      "shape": "triangle"
+    },
+    {
+      "id": "product_NAP_1_brown",
+      "name": "棕色NAP+1 商品",
+      "type": "brown",
+      "image": "blue",
+      "enabled": true,
+      "shape": "diamond"
+    },
+    {
+      "id": "product_NAP_1_red",
+      "name": "紅色NAP+1 商品",
+      "type": "red",
+      "image": "blue",
+      "enabled": true,
+      "shape": "diamond"
+    },
+    {
+      "id": "product_NAP_1_green",
+      "name": "綠色NAP+1 商品",
+      "type": "green",
+      "image": "blue",
+      "enabled": true,
+      "shape": "diamond"
+    },
+    {
+      "id": "product_PPA_1_brown",
+      "name": "棕色PPA+1 商品",
+      "type": "brown",
+      "image": "green",
+      "enabled": true,
+      "shape": "cross"
+    },
+    {
+      "id": "product_PPA_1_red",
+      "name": "紅色PPA+1 商品",
+      "type": "red",
+      "image": "green",
+      "enabled": true,
+      "shape": "cross"
+    },
+    {
+      "id": "product_PPA_1_blue",
+      "name": "藍色PPA+1 商品",
+      "type": "blue",
+      "image": "green",
+      "enabled": true,
+      "shape": "cross"
+    },
+    {
+      "id": "product_QSS_8_gold",
+      "name": "金色QSS+8 商品",
+      "type": "gold",
+      "image": "product-qss",
+      "enabled": true,
+      "shape": "product-qss"
+    },
+    {
+      "id": "product_QSS_8_brown",
+      "name": "棕色QSS+8 商品",
+      "type": "brown",
+      "image": "product-qss",
+      "enabled": true,
+      "shape": "product-qss"
+    },
+    {
+      "id": "product_QSS_8_red",
+      "name": "紅色QSS+8 商品",
+      "type": "red",
+      "image": "product-qss",
+      "enabled": true,
+      "shape": "product-qss"
+    },
+    {
+      "id": "product_QSS_8_blue",
+      "name": "藍色QSS+8 商品",
+      "type": "blue",
+      "image": "product-qss",
+      "enabled": true,
+      "shape": "product-qss"
+    },
+    {
+      "id": "product_QSS_8_green",
+      "name": "綠色QSS+8 商品",
+      "type": "green",
+      "image": "product-qss",
+      "enabled": true,
+      "shape": "product-qss"
+    },
+    {
+      "id": "product_SDD_10_gold",
+      "name": "金色SDD+10 商品",
+      "type": "gold",
+      "image": "product-sdd",
+      "enabled": true,
+      "shape": "product-sdd"
+    },
+    {
+      "id": "product_SDD_10_brown",
+      "name": "棕色SDD+10 商品",
+      "type": "brown",
+      "image": "product-sdd",
+      "enabled": true,
+      "shape": "product-sdd"
+    },
+    {
+      "id": "product_SDD_10_red",
+      "name": "紅色SDD+10 商品",
+      "type": "red",
+      "image": "product-sdd",
+      "enabled": true,
+      "shape": "product-sdd"
+    },
+    {
+      "id": "product_SDD_10_blue",
+      "name": "藍色SDD+10 商品",
+      "type": "blue",
+      "image": "product-sdd",
+      "enabled": true,
+      "shape": "product-sdd"
+    },
+    {
+      "id": "product_SDD_10_green",
+      "name": "綠色SDD+10 商品",
+      "type": "green",
+      "image": "product-sdd",
+      "enabled": true,
+      "shape": "product-sdd"
+    },
+    {
+      "id": "product_YSS_2_gold",
+      "name": "金色YSS+2 商品",
+      "type": "gold",
+      "image": "product-yss",
+      "enabled": true,
+      "shape": "product-yss"
+    },
+    {
+      "id": "product_YSS_2_brown",
+      "name": "棕色YSS+2 商品",
+      "type": "brown",
+      "image": "product-yss",
+      "enabled": true,
+      "shape": "product-yss"
+    },
+    {
+      "id": "product_YSS_2_red",
+      "name": "紅色YSS+2 商品",
+      "type": "red",
+      "image": "product-yss",
+      "enabled": true,
+      "shape": "product-yss"
+    },
+    {
+      "id": "product_YSS_2_blue",
+      "name": "藍色YSS+2 商品",
+      "type": "blue",
+      "image": "product-yss",
+      "enabled": true,
+      "shape": "product-yss"
+    },
+    {
+      "id": "product_YSS_2_green",
+      "name": "綠色YSS+2 商品",
+      "type": "green",
+      "image": "product-yss",
+      "enabled": true,
+      "shape": "product-yss"
+    }
+  ],
+  "InfiniteMode": [
+    {
+      "key": "ruleIds",
+      "value": "gold,brown,forbid,left,dual,distract,no-red,switch,compound,combined,clear"
+    },
+    {
+      "key": "minStimuli",
+      "value": 16
+    },
+    {
+      "key": "maxStimuli",
+      "value": 24
+    },
+    {
+      "key": "minInterval",
+      "value": 500
+    },
+    {
+      "key": "maxInterval",
+      "value": 850
+    },
+    {
+      "key": "stimulusDuration",
+      "value": 1300
+    },
+    {
+      "key": "timeLimit",
+      "value": 75
+    },
+    {
+      "key": "targetRatio",
+      "value": 0.55
+    },
+    {
+      "key": "distractorRatio",
+      "value": 0.3
+    },
+    {
+      "key": "switchChance",
+      "value": 0.25
+    },
+    {
+      "key": "minClickableRatio",
+      "value": 0.5
+    },
+    {
+      "key": "recentSignatures",
+      "value": 10
+    },
+    {
+      "key": "maxAttempts",
+      "value": 1500
+    },
+    {
+      "key": "maxClickableRatio",
+      "value": 0.7
+    }
+  ]
+}
