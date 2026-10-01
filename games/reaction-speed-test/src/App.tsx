@@ -16,17 +16,19 @@ import {StimulusToken,RuleExamples} from './components/StimulusToken';
 import {Results} from './components/Results';
 import {Developer,type Overrides} from './components/Developer';
 import {tutorialDescription} from "./game/tutorial";
+import {readInfiniteSession,saveInfiniteSession,clearInfiniteSession} from './utils/infinite-session';
 import {History} from './components/History';
 type Session={level:Level;plan:Planned[];config:Config;mode:string;id:number};
 export function App({config,preloading}:{config:Config;preloading:Promise<any[]>}){
  const [loaded,setLoaded]=useState<any[]>([]),[assetStatus,setAssetStatus]=useState('loading');
  useEffect(()=>{let active=true;preloading.then(items=>{if(active){setLoaded(items);setAssetStatus(items.every(item=>item.ok)?'ready':'failed');}}).catch(()=>{if(active)setAssetStatus('failed');});return()=>{active=false;};},[preloading]);
- const [page,setPage]=useState('home'),[session,setSession]=useState<Session|null>(null),[result,setResult]=useState<Result|null>(null),[history,setHistory]=useState(readHistory),[override,setOverride]=useState<Overrides>({}),[error,setError]=useState('');
+ const [restored]=useState(()=>readInfiniteSession(config));
+ const [page,setPage]=useState(restored?'rules':'home'),[session,setSession]=useState<Session|null>(()=>restored?{level:restored.level,plan:restored.plan,config:{...config,rules:restored.rules},mode:'infinite',id:performance.now()}:null),[result,setResult]=useState<Result|null>(null),[history,setHistory]=useState(readHistory),[override,setOverride]=useState<Overrides>({}),[error,setError]=useState('');
  const [progress,setProgress]=useState(readProgress);
  const [today,setToday]=useState(dailyDate);
  useEffect(()=>{if(page==='rules')document.querySelector<HTMLElement>('.prestart-card')?.focus({preventScroll:true});},[page,session?.id]);
  const lastDraw=useRef<Record<string,string>>({});
- const recent=useRef<string[]>([]),counter=useRef(0),audio=useRef<AudioManager|null>(null),life=useRef<GameLifecycle|null>(null);
+ const recent=useRef<string[]>(restored?.recent||[]),counter=useRef(restored?.counter||0),audio=useRef<AudioManager|null>(null),life=useRef<GameLifecycle|null>(null);
  const enabledProducts=config.stimuli.filter(s=>s.enabled);
  const homepageProducts=enabledProducts.filter((s,i)=>enabledProducts.findIndex(other=>config.assets[other.image]===config.assets[s.image])===i);
  const tutorials=config.tutorials||[];
@@ -34,7 +36,9 @@ export function App({config,preloading}:{config:Config;preloading:Promise<any[]>
  useEffect(()=>{const update=()=>setToday(dailyDate());const timer=window.setInterval(update,30000);window.addEventListener('focus',update);return()=>{window.clearInterval(timer);window.removeEventListener('focus',update);};},[]);
  useEffect(()=>{audio.current=new AudioManager({enabled:config.settings.soundEnabled});const lifecycle=new GameLifecycle();lifecycle.transition('ready');life.current=lifecycle;return()=>{audio.current?.destroy();lifecycle.destroy();};},[]);
  useEffect(()=>{if(!debug||override.debug===false)return;const input=new InputManager();const panel=new DebugPanel({enabled:true,gameId:config.settings.gameId,version:config.settings.gameVersion,lifecycle:life.current,input,loadedAssets:loaded} as any);return()=>{panel.destroy();input.destroy();};},[debug,override.debug,loaded]);
+ useEffect(()=>{if(session?.mode==='infinite'&&['rules','play','result'].includes(page)){if(!saveInfiniteSession(config,{level:session.level,plan:session.plan,rules:session.config.rules,counter:counter.current,recent:recent.current}))setError('瀏覽器未允許暫存，重新整理無法保留目前無限挑戰。');}else clearInfiniteSession();},[page,session,config]);
  function prepare(base:Level,mode='level',repeat=false){try{setError('');let c=structuredClone(config),l={...base};
+  if(mode==='infinite'&&repeat&&session?.mode==='infinite'){setSession({...session,id:performance.now()});setPage('rules');return;}
   if(mode==='tutorial'){const lesson=tutorials.find(t=>t.levelId===base.levelId);if(!lesson)throw Error('找不到教學關卡。');c.rules=[...c.rules,{id:lesson.ruleId,name:lesson.name,description:describeCondition(lesson.condition,c),condition:lesson.condition}];}
   if(mode==='daily'){
    const date=dailyDate(),key=`daily:${date}`;const d=dailyChallenge(c,date,lastDraw.current[key]);lastDraw.current[key]=d.selection;setToday(d.date);audio.current!.enabled=override.soundEnabled??c.settings.soundEnabled;setSession({level:d.level,config:d.config,plan:d.plan,mode,id:performance.now()});setPage('rules');return;
