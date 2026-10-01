@@ -29,6 +29,6 @@ test('configured thresholds match profiles; reorder retains progress identity an
  }
  const old={...config,levels:config.levels.map(l=>({...l,levelId:l.progressTemplateId!,progressTemplateId:undefined})).sort((a,b)=>Number(a.levelId)-Number(b.levelId))};
  const a=dailyChallenge(config,'2026-09-30'),b=dailyChallenge(old,'2026-09-30');
- assert.equal(a.level.ruleId,b.level.ruleId);assert.deepEqual(a.plan,b.plan);
- assert.deepEqual(a.config.rules,b.config.rules);
+ assert.equal(a.level.ruleId,b.level.ruleId);assert.equal(a.level.templateKey,b.level.templateKey);
+ assert.equal(a.level.starAverageMs,b.level.starAverageMs);
 });

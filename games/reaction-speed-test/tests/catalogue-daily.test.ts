@@ -40,18 +40,18 @@ test('Taipei midnight changes daily date independently of device timezone',()=>{
  assert.equal(dailyDate(new Date('2026-09-30T16:00:00Z')),'2026-10-01');
  assert.equal(dailyDate(new Date('2026-12-31T16:00:00Z')),'2027-01-01');
 });
-test('daily rules, targets and plans repeat across reload/replay and vary by date',()=>{
+test('daily template stays fixed but replay redraws targets and plans without changing rule structure',()=>{
  const before=JSON.stringify(config),seen=new Set<string>();
  for(let i=0;i<366;i++){
-  const date=dailyDate(new Date(Date.UTC(2026,0,1+i))),a=dailyChallenge(config,date),b=dailyChallenge(structuredClone(config),date);
-  assert.deepEqual(a,b);
+  const date=dailyDate(new Date(Date.UTC(2026,0,1+i))),a=dailyChallenge(config,date,undefined,seeded(i+1)),b=dailyChallenge(structuredClone(config),date,a.selection,seeded(i+900));
+  assert.deepEqual(a.level,b.level);assert.notEqual(a.selection,b.selection);assert.notDeepEqual(a.plan,b.plan);
   assert.equal(a.level.levelId,`daily-${date}`);
   const rule=a.config.rules.find(r=>r.id===a.level.ruleId)!;
-  seen.add(JSON.stringify(rule.condition));
+  seen.add(a.level.ruleId);
   a.plan.forEach((p,j)=>assert.equal(p.shouldClick,evaluate(rule.condition,a.plan,j)));
   assert.ok(a.plan.filter(p=>p.shouldClick).length>=9&&a.plan.filter(p=>p.shouldClick).length<=12);
  }
- assert.ok(seen.size>250);assert.equal(JSON.stringify(config),before);
+ assert.ok(seen.size>80);assert.equal(JSON.stringify(config),before);
 });
 test('revised levels preserve old progress but do not inherit its stars; daily stays separate',()=>{
  const old={...config.levels[0],ruleRevision:undefined};

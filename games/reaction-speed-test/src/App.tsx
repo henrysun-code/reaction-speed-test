@@ -37,7 +37,7 @@ export function App({config,preloading}:{config:Config;preloading:Promise<any[]>
  function prepare(base:Level,mode='level',repeat=false){try{setError('');let c=structuredClone(config),l={...base};
   if(mode==='tutorial'){const lesson=tutorials.find(t=>t.levelId===base.levelId);if(!lesson)throw Error('找不到教學關卡。');c.rules=[...c.rules,{id:lesson.ruleId,name:lesson.name,description:describeCondition(lesson.condition,c),condition:lesson.condition}];}
   if(mode==='daily'){
-   const d=dailyChallenge(c);setToday(d.date);audio.current!.enabled=override.soundEnabled??c.settings.soundEnabled;setSession({level:d.level,config:d.config,plan:d.plan,mode,id:performance.now()});setPage('rules');return;
+   const date=dailyDate(),key=`daily:${date}`;const d=dailyChallenge(c,date,lastDraw.current[key]);lastDraw.current[key]=d.selection;setToday(d.date);audio.current!.enabled=override.soundEnabled??c.settings.soundEnabled;setSession({level:d.level,config:d.config,plan:d.plan,mode,id:performance.now()});setPage('rules');return;
   }
   if(mode==='infinite'&&!repeat){const generated=infiniteLevel(c,++counter.current,recent.current);l=generated.level;recent.current=[...recent.current,generated.signature].slice(-Number(c.infinite.recentSignatures));}
   if(mode!=='tutorial')l={...l,...Object.fromEntries(Object.entries(override).filter(([,v])=>v!==undefined))};
