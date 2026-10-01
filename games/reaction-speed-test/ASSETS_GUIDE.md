@@ -19,3 +19,10 @@
 - 同一商品可有不同色環：建立多筆 Stimuli，保持相同 image 與 shape（商品識別碼），分別指定不同 type。id 必須各自唯一。
 - 商品替換原本的幾何圖形時，需同步更新 shape 與 Rules 的 targetShape / forbiddenShape，以及規則中文描述。不能只換圖片，卻仍讓提示稱它為三角形。
 - 完成設定後執行 `npm run build`，驗證並產生遊戲設定與素材輸出。
+
+## 背景水母
+
+- 素材放在 `assets/images/distractors/`；目前使用 `jellyfish.webp`（透明背景、768×768、品質 90，約 93 KB），原始 `水母.png` 保留。
+- Excel 的 Assets 中，`id=noise`、`category=distractor` 指向 `jellyfish.webp`。更換素材後執行 `npm run build`。
+- 水母以等比例置中的大圖出現在遊戲區背景，商品與色環位於前景，不參與商品的位置判定。
+- 背景透明度由 `src/style.css` 的 `--distractor-background-opacity` 控制，目前為 0.32。規則辨識圖維持原圖清晰顯示。

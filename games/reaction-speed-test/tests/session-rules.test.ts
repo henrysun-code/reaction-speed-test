@@ -65,7 +65,7 @@ test('OR descriptions do not claim a global prohibition and impossible templates
 });
 test('nested product OR flattens into four readable alternatives without separating AND',()=>{
  const c:Condition={compoundCondition:{op:'any',conditions:[{targetType:'gold'},{compoundCondition:{op:'any',conditions:[{targetShape:'circle'},{targetShape:'triangle'}]}},{compoundCondition:{op:'all',conditions:[{positionCondition:'left'},{distractorCondition:'present'}]}}]}};
- assert.equal(describeCondition(c,config),'達成條件：\n1. 外圈是金色，商品不限\n2. 商品是 ABT+2，色環不限\n3. 商品是 mTOR（MTT+10），色環不限\n4. 商品中心位於左半邊，而且畫面有灰色星星，色環、商品不限');
+ assert.equal(describeCondition(c,config),'達成條件：\n1. 外圈是金色，商品不限\n2. 商品是 ABT+2，色環不限\n3. 商品是 mTOR（MTT+10），色環不限\n4. 商品中心位於左半邊，而且背景出現水母，色環、商品不限');
 });
 test('numbered alternatives preserve all configured truth tables, including mixed AND/OR scopes',()=>{
  const domain=config.stimuli.flatMap(stimulus=>[.3,.7].flatMap(x=>[false,true].map(distractor=>({stimulus,x,y:.5,distractor} as any))));
@@ -87,7 +87,7 @@ test('branch-specific position is not presented as a universal necessary conditi
  assert.ok(description.includes('1. 外圈是金色，而且商品中心位於左半邊'));
  const gated={positionCondition:'left',distractorCondition:'absent',compoundCondition:c.compoundCondition} as Condition;
  assert.equal(ruleRequirements(gated).necessary.length,2);
- assert.ok(describeCondition(gated,config).startsWith('必要條件：\n1. 商品中心位於左半邊\n2. 畫面沒有灰色星星'));
+ assert.ok(describeCondition(gated,config).startsWith('必要條件：\n1. 商品中心位於左半邊\n2. 背景沒有水母'));
 });
 test('unrestricted-item labels respect shared exclusions and AND branches',()=>{
  const colorGate:Condition={forbiddenType:'red',compoundCondition:{op:'any',conditions:[{targetShape:'circle'},{targetShape:'square'}]}};

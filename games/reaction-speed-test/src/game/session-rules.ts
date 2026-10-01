@@ -17,7 +17,7 @@ function clauses(c:Condition,config:Config):string[]{
  if(c.targetShape)parts.push(`商品是 ${productName(c.targetShape,config)}`);
  if(c.forbiddenShape)parts.push(`商品不是 ${productName(c.forbiddenShape,config)}`);
  if(c.positionCondition)parts.push(`商品中心位於${c.positionCondition==='left'?'左':'右'}半邊`);
- if(c.distractorCondition)parts.push(c.distractorCondition==='absent'?'畫面沒有灰色星星':'畫面有灰色星星');
+ if(c.distractorCondition)parts.push(c.distractorCondition==='absent'?'背景沒有水母':'背景出現水母');
  return parts;
 }
 /** Each row is a complete way to qualify: OR between rows, AND within a row. */
