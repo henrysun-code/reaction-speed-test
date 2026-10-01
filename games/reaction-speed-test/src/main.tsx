@@ -4,4 +4,4 @@ import {App} from './App';
 import {load} from './config/load';
 import './style.css';
 applySafeArea(document.body);
-load().then(({config,loaded})=>createRoot(document.getElementById('app')!).render(<App config={config} loaded={loaded}/>)).catch(error=>{document.getElementById('app')!.textContent=`無法啟動：${error.message}`;});
+load().then(({config,preloading})=>createRoot(document.getElementById('app')!).render(<App config={config} preloading={preloading}/>)).catch(error=>{document.getElementById('app')!.textContent=`無法啟動：${error.message}`;});

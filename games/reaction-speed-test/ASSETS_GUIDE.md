@@ -11,6 +11,8 @@
 
 ## 商品圖與色環
 
+- 目前 8 張商品圖以透明 WebP 載入，維持 1024×1024、品質 90。PNG 原檔仍保留供後續編輯，但遊戲設定指向 `.webp`；轉換後記得同步更新 Excel 的所有同商品引用。8 張總大小由 6,245,060 bytes 降為 1,056,862 bytes（約減少 83%）。
+
 - 商品透明 PNG 放在 `assets/images/targets/`，保留原檔名即可；後續可繼續加入。
 - PNG、JPEG、WebP 在刺激與規則提示中保留原色；既有 SVG 幾何圖形維持中性色。色環由 `Stimuli.type` 決定，與商品圖片本身的顏色無關。
 - 放入圖片不會自動改變關卡。需在 `config/game_config.xlsx` 的 Assets 登記 `category=target` 與檔名，再由 Stimuli 的 image 指向該 Assets.id。

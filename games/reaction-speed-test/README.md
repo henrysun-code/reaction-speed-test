@@ -6,6 +6,8 @@
 
 ## 啟動與 Build
 
+首頁讀取設定後立即顯示，不等待素材。背景只預載啟用商品及灰色星星圖片，去除重複網址，不預載未使用的舊圖形或等待音效；全部遊戲圖片載入成功後才啟用開始按鈕，失敗時提示重新整理，避免空白圖片影響判斷。
+
 在本目錄執行 `npm install`、`npm run dev`、`npm run build`。Build 輸出到 Workspace `dist/reaction-speed-test/`，可部署於網站子路徑。
 
 ## 調整內容

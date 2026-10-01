@@ -60,35 +60,35 @@
     {
       "id": "gold",
       "category": "target",
-      "file": "ABT+2.png",
+      "file": "ABT+2.webp",
       "enabled": true,
       "description": "ABT+2 商品原圖"
     },
     {
       "id": "brown",
       "category": "target",
-      "file": "BBB+1.png",
+      "file": "BBB+1.webp",
       "enabled": true,
       "description": "BBB+1 商品原圖"
     },
     {
       "id": "red",
       "category": "target",
-      "file": "MTT+10.png",
+      "file": "MTT+10.webp",
       "enabled": true,
       "description": "MTT+10 商品原圖"
     },
     {
       "id": "blue",
       "category": "target",
-      "file": "NAP+1.png",
+      "file": "NAP+1.webp",
       "enabled": true,
       "description": "NAP+1 商品原圖"
     },
     {
       "id": "green",
       "category": "target",
-      "file": "PPA+1.png",
+      "file": "PPA+1.webp",
       "enabled": true,
       "description": "PPA+1 商品原圖"
     },
@@ -102,49 +102,49 @@
     {
       "id": "gold-square",
       "category": "target",
-      "file": "BBB+1.png",
+      "file": "BBB+1.webp",
       "enabled": true,
       "description": "BBB+1 商品原圖"
     },
     {
       "id": "gold-triangle",
       "category": "target",
-      "file": "MTT+10.png",
+      "file": "MTT+10.webp",
       "enabled": true,
       "description": "MTT+10 商品原圖"
     },
     {
       "id": "gold-diamond",
       "category": "target",
-      "file": "NAP+1.png",
+      "file": "NAP+1.webp",
       "enabled": true,
       "description": "NAP+1 商品原圖"
     },
     {
       "id": "gold-cross",
       "category": "target",
-      "file": "PPA+1.png",
+      "file": "PPA+1.webp",
       "enabled": true,
       "description": "PPA+1 商品原圖"
     },
     {
       "id": "product-qss",
       "category": "target",
-      "file": "QSS+8.png",
+      "file": "QSS+8.webp",
       "enabled": true,
       "description": "QSS+8 商品原圖"
     },
     {
       "id": "product-sdd",
       "category": "target",
-      "file": "SDD+10.png",
+      "file": "SDD+10.webp",
       "enabled": true,
       "description": "SDD+10 商品原圖"
     },
     {
       "id": "product-yss",
       "category": "target",
-      "file": "YSS+2.png",
+      "file": "YSS+2.webp",
       "enabled": true,
       "description": "YSS+2 商品原圖"
     }

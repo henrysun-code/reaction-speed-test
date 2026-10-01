@@ -82,7 +82,7 @@ test('all eight products have five rings and can appear in the level pool',()=>{
   const file=assetFiles.get(stimulus.image)!;
   const rings=products.get(file)||new Set<string>();rings.add(stimulus.type);products.set(file,rings);
  }
- assert.deepEqual([...products.keys()].sort(),['ABT+2.png','BBB+1.png','MTT+10.png','NAP+1.png','PPA+1.png','QSS+8.png','SDD+10.png','YSS+2.png']);
+ assert.deepEqual([...products.keys()].sort(),['ABT+2.webp','BBB+1.webp','MTT+10.webp','NAP+1.webp','PPA+1.webp','QSS+8.webp','SDD+10.webp','YSS+2.webp']);
  for(const rings of products.values())assert.deepEqual(rings,new Set(['gold','brown','red','blue','green']));
  const seen=new Set<string>();
  for(let seed=0;seed<100;seed++)for(const trial of planLevel(config,config.levels[0],seeded(seed)))seen.add(trial.stimulus.id);
