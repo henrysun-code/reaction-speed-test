@@ -7099,5 +7099,254 @@
       "key": "maxClickableRatio",
       "value": 0.7
     }
+  ],
+  "Tutorials": [
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-1",
+      "name": "指定一種色環",
+      "ruleId": "tutorial-rule-1",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "targetType": "gold"
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-2",
+      "name": "指定多種色環",
+      "ruleId": "tutorial-rule-2",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "allowedTypes": [
+          "gold",
+          "blue"
+        ]
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-3",
+      "name": "排除一種色環",
+      "ruleId": "tutorial-rule-3",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "forbiddenType": "red"
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-4",
+      "name": "指定一種商品",
+      "ruleId": "tutorial-rule-4",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "targetShape": "circle"
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-5",
+      "name": "指定多種商品",
+      "ruleId": "tutorial-rule-5",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "compoundCondition": {
+          "op": "any",
+          "conditions": [
+            {
+              "targetShape": "circle"
+            },
+            {
+              "targetShape": "square"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-6",
+      "name": "排除一種商品",
+      "ruleId": "tutorial-rule-6",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "forbiddenShape": "triangle"
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-7",
+      "name": "只點指定側",
+      "ruleId": "tutorial-rule-7",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0,
+      "randomPosition": true,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "positionCondition": "left"
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-8",
+      "name": "背景有水母",
+      "ruleId": "tutorial-rule-8",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0.5,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "distractorCondition": "present"
+      }
+    },
+    {
+      "secondaryRuleId": "",
+      "switchAtTrial": "",
+      "switchAtPercent": "",
+      "levelId": "tutorial-9",
+      "name": "背景沒有水母",
+      "ruleId": "tutorial-rule-9",
+      "stimulusCount": 10,
+      "timeLimit": 60,
+      "minInterval": 550,
+      "maxInterval": 850,
+      "stimulusDuration": 2000,
+      "requiredAccuracy": 0.9,
+      "targetRatio": 0.6,
+      "distractorRatio": 0.5,
+      "randomPosition": false,
+      "countdownEnabled": true,
+      "enabled": true,
+      "randomizeTargets": false,
+      "starAccuracy": 0.9,
+      "starAverageMs": 1000,
+      "ruleRevision": "tutorial-v1",
+      "condition": {
+        "distractorCondition": "absent"
+      }
+    }
   ]
 }

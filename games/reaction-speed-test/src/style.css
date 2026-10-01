@@ -564,3 +564,7 @@ html:has(.single-screen), body:has(.single-screen) { height: 100%; overflow: hid
   .history-screen .history-row { flex-direction: column; padding: var(--space-2); }
   .history-screen > .ghost { grid-column: 1; min-height: 44px; padding: 0; }
 }
+.tutorial-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-3);margin-bottom:var(--space-4);}
+.tutorial-lesson {display:flex;flex-direction:column;align-items:center;gap:var(--space-2);min-height:112px;}
+.tutorial-lesson strong {font-size:14px;}
+@media(max-width:480px){.tutorial-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-2);}.tutorial-lesson{min-height:100px;}}

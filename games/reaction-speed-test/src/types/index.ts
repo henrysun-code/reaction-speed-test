@@ -7,5 +7,5 @@ export type Trial = {trialIndex:number;stimulusId:string;stimulusType:string;sti
 export type Stats = {average:number|null;fastest:number|null;slowest:number|null;median:number|null;stability:number|null;accuracy:number;correctClicks:number;falseAlarms:number;misses:number;passed:boolean; sampleCount:number};
 export type Stars = {completed:boolean;accuracy:boolean;speed:boolean};
 export type Result = {date:string;level:Level;mode:string;rule:string;stats:Stats;trials:Trial[];overridden:boolean;stars?:Stars;rules?:Rule[]};
-export type Config = {settings:Record<string,any>;levels:Level[];rules:Rule[];stimuli:Stimulus[];infinite:Record<string,any>;assets:Record<string,string>;audio:any[];text:Record<string,string>};
+export type Config = {settings:Record<string,any>;levels:Level[];tutorials?:(Level&{condition:Condition})[];rules:Rule[];stimuli:Stimulus[];infinite:Record<string,any>;assets:Record<string,string>;audio:any[];text:Record<string,string>};
 

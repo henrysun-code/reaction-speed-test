@@ -15,5 +15,5 @@ export async function load(base=import.meta.env?.BASE_URL??"./"){
  const images=new Set<string>(raw.Stimuli.filter((s:any)=>s.enabled).map((s:any)=>assets[s.image]));
  if(assets.noise)images.add(assets.noise);
  const preloading=preloadAssets([...images].map(src=>({src,type:'image'})));
- return {config:{settings:setting,levels:raw.Levels.filter((l:any)=>l.enabled),rules:raw.Rules.map((r:any)=>({...r,description:ringText(r.description)})),stimuli:raw.Stimuli.map((s:any)=>({...s,name:ringText(s.name)})),infinite:pairs(raw.InfiniteMode),assets,audio,text:Object.fromEntries(raw.Text.map((r:any)=>[r.key,r.text]))} as Config,preloading};
+ return {config:{settings:setting,levels:raw.Levels.filter((l:any)=>l.enabled),tutorials:(raw.Tutorials||[]).filter((l:any)=>l.enabled),rules:raw.Rules.map((r:any)=>({...r,description:ringText(r.description)})),stimuli:raw.Stimuli.map((s:any)=>({...s,name:ringText(s.name)})),infinite:pairs(raw.InfiniteMode),assets,audio,text:Object.fromEntries(raw.Text.map((r:any)=>[r.key,r.text]))} as Config,preloading};
 }

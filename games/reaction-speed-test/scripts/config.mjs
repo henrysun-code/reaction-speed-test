@@ -7,7 +7,12 @@ import XLSX from 'xlsx';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const wb=XLSX.readFile(path.join(root,'config/game_config.xlsx'));
 const extra={};for(const sheet of ['Levels','Rules','Stimuli','InfiniteMode']){if(!wb.Sheets[sheet])throw Error(`Sheet ${sheet}: 缺少工作表`);extra[sheet]=XLSX.utils.sheet_to_json(wb.Sheets[sheet],{defval:''});}
-const fail=(s,i,k,msg)=>{throw Error(`Sheet ${s} Row ${i+2} Column ${k}: ${msg}`);};
+// Reuse validation while keeping tutorials out of fixed/daily/infinite pools.
+const levelCount=extra.Levels.length,ruleCount=extra.Rules.length;
+const tutorialRows=wb.Sheets.Tutorials?XLSX.utils.sheet_to_json(wb.Sheets.Tutorials,{defval:''}):[];
+extra.Levels.push(...tutorialRows.map(({condition,...level})=>({secondaryRuleId:'',switchAtTrial:'',switchAtPercent:'',...level})));
+extra.Rules.push(...tutorialRows.map(r=>({id:r.ruleId,name:r.name,description:'',condition:r.condition,ruleSwitch:''})));
+const fail=(s,i,k,msg)=>{const offset=s==='Levels'?levelCount:s==='Rules'?ruleCount:Infinity;if(i>=offset){s='Tutorials';i-=offset;}throw Error(`Sheet ${s} Row ${i+2} Column ${k}: ${msg}`);};
 for(const s of ['Levels','Rules','Stimuli']){const key=s==='Levels'?'levelId':'id',seen=new Set();extra[s].forEach((r,i)=>{if(!r[key]||seen.has(String(r[key])))fail(s,i,key,'缺少或重複 ID');seen.add(String(r[key]));});}
 const types=new Set(extra.Stimuli.filter(s=>String(s.enabled).toLowerCase()==='true').map(s=>s.type));
 const shapes=new Set(extra.Stimuli.filter(s=>String(s.enabled).toLowerCase()==='true').map(s=>s.shape));
@@ -41,6 +46,8 @@ extra.Levels.forEach((r,i)=>{if(r.minInterval<Number(settings.inputGuardMs))fail
 const result=spawnSync(process.execPath,[path.join(root,'../../tools/xlsx-to-json/cli.js'),'--game',root],{stdio:'inherit'});if(result.status!==0)process.exit(result.status||1);
 const file=path.join(root,'config/generated/game_config.json'),common=JSON.parse(fs.readFileSync(file,'utf8'));
 extra.Stimuli.forEach((r,i)=>{if(r.enabled&&!common.Assets.some(a=>a.id===r.image&&String(a.enabled).toLowerCase()==='true'))fail('Stimuli',i,'image','需指向已啟用 Assets.id');});
-const combined={...common,...extra};for(const out of ['config/generated/game_config.json','public/config/generated/game_config.json'])fs.writeFileSync(path.join(root,out),JSON.stringify(combined,null,2));
+const Tutorials=extra.Levels.splice(levelCount).map((level,i)=>({...level,condition:extra.Rules[ruleCount+i].condition}));
+extra.Rules.splice(ruleCount);
+const combined={...common,...extra,Tutorials};for(const out of ['config/generated/game_config.json','public/config/generated/game_config.json'])fs.writeFileSync(path.join(root,out),JSON.stringify(combined,null,2));
 console.log('遊戲專用 Sheet 驗證完成。');
 

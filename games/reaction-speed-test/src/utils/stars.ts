@@ -13,7 +13,7 @@ export function earnedStars(result:Result):Stars{
   speed:completed&&result.stats.sampleCount>0&&result.stats.average!==null&&result.stats.average<=targets.averageMs};
 }
 export function mergeProgress(progress:Progress,result:Result):Progress{
- if(result.mode!=='level'||result.overridden)return progress;
+ if(!['level','tutorial'].includes(result.mode)||result.overridden)return progress;
  const id=progressId(result.level),earned=result.stars??earnedStars(result),old=progress[id]??emptyStars();
  return {...progress,[id]:{completed:old.completed||earned.completed,accuracy:old.accuracy||earned.accuracy,speed:old.speed||earned.speed}};
 }
